@@ -1,11 +1,8 @@
 package com.dropex.testingProject.enumClass;
 
 import com.dropex.testingProject.utils.ResourcesUtils;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
-
 import java.util.Properties;
-import java.util.logging.LogManager;
 
 public enum  UrlEnvironment {
 
@@ -18,6 +15,7 @@ public enum  UrlEnvironment {
     private String url = null;
 
     private static UrlEnvironment built(String url, boolean custom){
+        LOGGER.info("Set environment URL : "+url.toUpperCase());
         if(custom){
             UrlEnvironment.CUSTOM.setUrl(url);
             return UrlEnvironment.CUSTOM;
@@ -45,9 +43,7 @@ public enum  UrlEnvironment {
     }
 
     private void loadEnv(){
-        BasicConfigurator.configure();
         try{
-            System.out.println(ResourcesUtils.getContentFile(PROPERTIES_FILE));
             Properties env = new Properties();
             env.load(ResourcesUtils.getPropertiesFile(PROPERTIES_FILE));
 
