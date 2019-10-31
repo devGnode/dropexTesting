@@ -7,9 +7,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+
+
 public class ResourcesUtils {
 
-    private final static Logger LOGGER = Logger.getLogger(ResourcesUtils.class);
+    private final static Logger LOGGER =  Logger.getLogger(ResourcesUtils.class);
 
     public static Path getresources(String path) throws URISyntaxException {
         return Paths.get(ResourcesUtils.class.getClassLoader().getResource(path).toURI());
@@ -21,9 +23,9 @@ public class ResourcesUtils {
         try{
             returned = new String(Files.readAllBytes(getresources(path)));
         }catch(Exception e){
-            LOGGER.error("Error to read file : ");
+            LOGGER.error(String.format("Error to read file : %s",path));
             throw new RuntimeException(e.getMessage());
-        };
+        }
         return returned;
     }
 }
