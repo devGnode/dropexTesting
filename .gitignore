@@ -8,3 +8,6 @@ target/
 
 # webDriver
 drivers/*
+
+# Unit test
+Test.java
