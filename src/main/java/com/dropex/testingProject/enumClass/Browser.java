@@ -25,7 +25,7 @@ public enum Browser {
             }catch (Exception e){
                 LOGGER.info("Set browser by default : "+DEFAULT_BROWSER);
                 Browser tmp = Browser.valueOf(DEFAULT_BROWSER);
-                tmp.setPath("drivers/chrome.exe");
+                tmp.setPath("driver/chrome.exe");
                 return tmp;
             }
     }
