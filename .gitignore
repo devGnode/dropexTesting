@@ -1,6 +1,7 @@
 # IDE Intelliji
 .idea
 *.iml
+dropexTesting.iml
 
 # Report
 target/
