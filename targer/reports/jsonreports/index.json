@@ -1,0 +1,62 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-11-01T01:08:34.778Z",
+        "line": 4,
+        "name": "navigation test",
+        "description": "",
+        "id": "test;navigation-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4578600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to home page",
+            "match": {
+              "location": "HomeStep.java:19"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "new Test",
+            "match": {
+              "location": "HomeStep.java:28"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/dropexTesting_0001_test.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,11 +1,19 @@
 # IDE Intelliji
-.idea
+.idea/
 *.iml
-dropexTesting.iml
+*.ipr
+*.iws
 
-# Report
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Report & conf
 target/
 log/
+.allure/
+
 
 # webDriver
 drivers/*
