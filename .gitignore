@@ -5,6 +5,7 @@ dropexTesting.iml
 
 # Report
 target/
+log/
 
 # webDriver
 drivers/*
