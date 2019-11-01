@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
             "html:target/reports/html/htmlreport",
             "json:target/reports/jsonreports/index.json",
             "junit:target/reports/xmlreports.xml",
-           // "io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm",
+           "io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm",
         }
 )
 public class Runner extends BaseRunner{ }
