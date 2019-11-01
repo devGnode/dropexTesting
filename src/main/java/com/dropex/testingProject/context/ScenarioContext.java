@@ -1,4 +1,4 @@
-package com.dropex.testingProject.config;
+package com.dropex.testingProject.context;
 
 import com.dropex.testingProject.enumClass.Context;
 
