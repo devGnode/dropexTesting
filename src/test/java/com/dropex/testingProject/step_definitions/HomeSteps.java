@@ -1,22 +1,21 @@
-package com.dropex.testingProject.stepsDef;
+package com.dropex.testingProject.step_definitions;
 
 import com.dropex.testingProject.context.ScenarioContext;
 import com.dropex.testingProject.pageObjects.HomePage;
-import io.cucumber.java8.En;
+import cucumber.api.java8.En;
 
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.*;
 
-public class HomeStep implements En {
+public class HomeSteps implements En {
 
-    public HomeStep(
+    public HomeSteps(
         ScenarioContext scenarioContext,
         HomePage homePage
     ){
 
-        Given("^I navigate to home page$",()->{
+        Given("I navigate to home page",()->{
 
             /*
             * Steps

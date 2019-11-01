@@ -90,11 +90,11 @@
             <artifactId>gherkin3</artifactId>
             <version>${cucumberGherkin.version}</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>gherkin</artifactId>
             <version>${gherkinVersion}</version>
-        </dependency>-->
+        </dependency>
       <!-- Cucumber -->
 
       <!-- log4j -->
