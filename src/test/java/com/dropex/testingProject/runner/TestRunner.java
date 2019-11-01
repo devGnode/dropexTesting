@@ -22,4 +22,6 @@ import io.cucumber.testng.CucumberOptions;
            "io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm",
         }
 )
-public class Runner extends BaseRunner{ }
+public class TestRunner extends BaseRunner{
+
+}
