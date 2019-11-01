@@ -28,6 +28,7 @@
       <cucumberGherkin.version>3.1.2</cucumberGherkin.version>
       <log4j.version>1.2.17</log4j.version>
       <slf4j.version>1.7.26</slf4j.version>
+      <gherkinVersion>2.12.2</gherkinVersion>
     </properties>
 
     <dependencies>
@@ -60,6 +61,7 @@
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-junit</artifactId>
         <version>${cucumber.version}</version>
+        <scope>test</scope>
       </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -70,6 +72,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${cucumber.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -80,6 +83,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-jvm-deps</artifactId>
             <version>${jmvDeps.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -91,6 +95,11 @@
             <artifactId>gherkin3</artifactId>
             <version>${cucumberGherkin.version}</version>
         </dependency>
+        <!--<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>${gherkinVersion}</version>
+        </dependency>-->
       <!-- Cucumber -->
 
       <!-- log4j -->
@@ -111,8 +120,13 @@
         <artifactId>slf4j-nop</artifactId>
         <version>${slf4j.version}</version>
      </dependency>
+     <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>2.1</version>
+     </dependency>
 
-      <!-- Allure report -->
+        <!-- Allure report -->
       <!-- Allure report -->
 
     </dependencies>
