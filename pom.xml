@@ -21,6 +21,7 @@
       <mavenSurefire.version>2.22.0</mavenSurefire.version>
       <aspectj.version>1.9.2</aspectj.version>
       <mavenResources.version>2.6</mavenResources.version>
+      <assured.version>4.0.0</assured.version>
       <!--<allure.results.directory>target/allure-results</allure.results.directory>-->
       <!--<allure.report.directory>target/allure-report</allure.report.directory>-->
     </properties>
@@ -121,7 +122,21 @@
         <version>2.1</version>
      </dependency>
 
-      <!-- Allure report -->
+     <!-- restAssured -->
+     <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>${assured.version}</version>
+        <scope>test</scope>
+     </dependency>
+     <dependency>
+        <groupId>io.rest-assured</groupId>
+         <artifactId>json-path</artifactId>
+         <version>${assured.version}</version>
+     </dependency>
+     <!-- restAssured -->
+
+        <!-- Allure report -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber3-jvm</artifactId>
