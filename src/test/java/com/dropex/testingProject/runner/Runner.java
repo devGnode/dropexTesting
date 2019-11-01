@@ -3,11 +3,12 @@ package com.dropex.testingProject.runner;
 //import io.cucumber.junit.Cucumber;
 //import io.cucumber.junit.CucumberOptions;
 //import io.cucumber.junit.Cucumber;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
+//import cucumber.api.junit.Cucumber;
+//import org.junit.runner.RunWith;
+//import cucumber.api.CucumberOptions;
+import io.cucumber.testng.CucumberOptions;
 
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(
         features = "./src/test/resources/features",
         monochrome = false,
@@ -21,6 +22,4 @@ import cucumber.api.CucumberOptions;
            // "io.qameta.allure.cucumber3jvm.AllureCucumber3Jvm",
         }
 )
-public class BasicRunner extends BaseRunner{
-
-}
+public class Runner extends BaseRunner{ }
