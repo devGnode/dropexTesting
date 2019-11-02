@@ -23,7 +23,7 @@ public class ScenarioContext {
         }
     }
 
-    public <T> T get(Context key){
+    public <T>Object get(Context key){
         return has(key.toString())?(T)context.get(key.toString()):null;
     }
 

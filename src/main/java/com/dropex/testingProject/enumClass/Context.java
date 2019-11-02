@@ -5,5 +5,10 @@ public enum Context {
     * ENUMERATION
     * */
     USER,
-    PASSWORD
+    PASSWORD,
+
+    /*
+    * RESTAPI
+    * */
+    LAST_REPONSE;
 }
