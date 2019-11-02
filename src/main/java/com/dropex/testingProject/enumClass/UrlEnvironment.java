@@ -8,6 +8,9 @@ public enum  UrlEnvironment {
 
     ENVIRONMENT_01,
     ENVIRONMENT_02,
+
+    DEFAULT_API,
+    BITCOIN,
     CUSTOM;
 
     private final static Logger LOGGER          = Logger.getLogger(UrlEnvironment.class.getName());
