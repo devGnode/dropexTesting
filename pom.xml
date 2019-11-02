@@ -22,6 +22,7 @@
       <aspectj.version>1.9.2</aspectj.version>
       <mavenResources.version>2.6</mavenResources.version>
       <assured.version>4.0.0</assured.version>
+      <json.version>20190722</json.version>
       <!--<allure.results.directory>target/allure-results</allure.results.directory>-->
       <!--<allure.report.directory>target/allure-report</allure.report.directory>-->
     </properties>
@@ -127,15 +128,25 @@
         <groupId>io.rest-assured</groupId>
         <artifactId>rest-assured</artifactId>
         <version>${assured.version}</version>
-        <scope>test</scope>
      </dependency>
      <dependency>
         <groupId>io.rest-assured</groupId>
          <artifactId>json-path</artifactId>
          <version>${assured.version}</version>
      </dependency>
+     <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>xml-path</artifactId>
+        <version>${assured.version}</version>
+     </dependency>
      <!-- restAssured -->
-
+     <!-- JSON -->
+     <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>${json.version}</version>
+     </dependency>
+     <!-- JSON -->
         <!-- Allure report -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
