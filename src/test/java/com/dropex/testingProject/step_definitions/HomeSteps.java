@@ -16,17 +16,9 @@ public class HomeSteps implements En {
     ){
 
         Given("I navigate to home page",()->{
-
-            /*
-            * Steps
-            * */
-            System.out.println("smlqdmqksdkmsqd");
             assertThat(homePage.test(),is(true));
         });
 
-        And("^new Test$",()->{
-            assertThat(true,is(true));
-        });
     }
 }
 
