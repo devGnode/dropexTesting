@@ -23,8 +23,8 @@
       <mavenResources.version>2.6</mavenResources.version>
       <assured.version>4.0.0</assured.version>
       <json.version>20190722</json.version>
-      <!--<allure.results.directory>target/allure-results</allure.results.directory>-->
-      <!--<allure.report.directory>target/allure-report</allure.report.directory>-->
+      <allure.results.directory>target/allure-results</allure.results.directory>
+      <allure.report.directory>target/reports</allure.report.directory>
     </properties>
 
     <dependencies>
